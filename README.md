@@ -1,8 +1,7 @@
 # NLP-Classification_Sentiment_Analysis-Sagemaker
 
 ## Project Overview
-This is a project I built from my university machine learning engineer in degree, this shows a NLP sentiment analysis model, which takes the data from thousands of IMDb movie reviews, to make predictions on new reviews that are handed to it. This model can also be used for other industry applications such as restaurant reviews, or auto repair shop reviews, etc. The processing for the NLP algorithm can be specifically tuned to analyze the sentiment of any type of review.
-The code in this notebook is mainly for the building the model itself inside of sage maker interface, and in addition to this I also built a lamb to function with in AWS environment, and an API gateway inside of AWS. With these two pre-processing functions, I was able to send my friends and family a website link, where they could type in a review, and instantly be delivered the prediction of whether their review was mostly positive, or mostly negative.
+In this project, I build a classification model to analyze the sentiment of movie reviews. This model takes the data from 10,000+ IMDb movie reviews, to make predictions on new reviews that are handed to it. This model can also be used for other industry applications such as restaurant reviews, or auto repair shop reviews, etc. The processing for the NLP algorithm can be specifically tuned to analyze the sentiment of any type of review. I also built a lambda function within AWS environment, and an API gateway inside of AWS to allow this model to be fully production ready. I was able to send my friends and family a website link, where they could type in a review, and instantly be delivered the prediction of whether their review was mostly positive, or mostly negative from this model.
 
 This was a very fun project, I enjoyed it very much! And I hope you do too :-)
 
