@@ -6,20 +6,17 @@ In this project, I build a classification model to analyze the sentiment of movi
 This was a very fun project, I enjoyed it very much! And I hope you do too :-)
 
 Link to IMDB Dataset:
-http://ai.stanford.edu/~amaas/data/sentiment/
+https://www.kaggle.com/c/boston-housing
+
 
 ### Files in this repository and their purpose
 Main Notebook.ipynb - JupyterNotebook containing all code used in project
 
-   Project Notebook.ipybn - A presentation of all steps taken in Main Notebook, in detail.
+   Proposal.pdf - A presentation of all steps taken in Main Notebook, in detail.
 
-   predict.py - File holding the deployment setup for pytorch model
+   Project Report.pdf - Another presentation of all steps taken in Main Notebook, formatted slightly different.
    
-   model.py - File holding the pytorch model parameters
-
-   train.py - File holding the pytorch model training parameters
-
-   index.html - HTML file with simple GUI and web address connecting to AWS REST API key
+   housing.csv - the dataset used for the project
 
    LICENSE - MIT license for this project
 
