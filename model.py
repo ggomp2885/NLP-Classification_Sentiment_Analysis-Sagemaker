@@ -128,7 +128,7 @@ var RegionFinder = (function()
     };
 
     function _getRedirectHostFromAttributes() {
-    	return "ap-south-2.console.aws.amazon.com";
+    	return "ap-south-1.console.aws.amazon.com";
     }
 
 
