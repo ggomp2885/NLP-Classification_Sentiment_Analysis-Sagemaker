@@ -41,12 +41,12 @@ var RegionFinder = (function()
         this.location = location;
     }
 
-    
+
     RegionFinder.prototype = {
 
-        
+
         getURLWithRegion: function() {
-            
+
             var isDynamicDefaultRegion = ifPathContains(this.location.pathname, "region/dynamic-default-region");
 
             var queryArgs = removeURLParameter(this.location.search, "region");
@@ -70,10 +70,10 @@ var RegionFinder = (function()
                 queryArgs = "?" + newArgs;
             }
 
-            
+
 
             if (!region) {
-                
+
                 var contactUs = "https://portal.aws.amazon.com/gp/aws/html-forms-controller/contactus/aws-report-issue1";
 
                 alert("How embarrassing! There is something wrong with this URL, please contact AWS at " + contactUs);
@@ -85,7 +85,7 @@ var RegionFinder = (function()
                 pathname + queryArgs + hashArgs;
         },
 
-        
+
         _getCurrentRegion: function() {
 
             return _getRegionFromHash( this.location ) ||
@@ -93,13 +93,13 @@ var RegionFinder = (function()
         }
     };
 
-    
+
 
     function ifPathContains(url, parameter) {
         return (url.indexOf(parameter) != -1);
     }
 
-    
+
     function removeURLParameter(url, parameter) {
         var urlparts= url.split('?');
         if (urlparts.length>=2) {
@@ -118,7 +118,7 @@ var RegionFinder = (function()
         }
     }
 
-    
+
     function _getRegionFromAttributes() {
         return "ap-south-1";
     };
@@ -128,18 +128,18 @@ var RegionFinder = (function()
     };
 
     function _getRedirectHostFromAttributes() {
-    	return "ap-south-1.console.aws.amazon.com";
+    	return "ap-south-2.console.aws.amazon.com";
     }
 
-    
+
     function _getRegionFromHash( location ) {
-        
+
         var hashArgs = "#" + (location.href.split("#")[1] || "");
 
-        
+
         var hashRegionArg = "";
 
-        
+
         var match = hashArgs.match("region=([a-zA-Z0-9-]+)");
         if (match && match.length > 1 && match[1]) {
             hashRegionArg = match[1];
